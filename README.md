@@ -3,12 +3,12 @@ For this assignment you will assemble metagenomes using [MEGAHIT](https://academ
 
 In class we will create a conda environment called `megahit`, install [megahit](https://github.com/voutcn/megahit) and check the help menu.
 
-In order to check the quality of the files, you are going to need [Quast](http://quast.sourceforge.net/). Create the environment, install and check the help menu.
+In order to check the quality of the files, you are going to need [Quast](http://quast.sourceforge.net/). In class we will create the environment, install and check the help menu.
 
 
 
 ## Locate and download the sequences
-You will be working with datasets from **Shotgun Sequencing of Tara Oceans DNA samples corresponding to size fractions for prokaryotes** 
+For your assignement, you will be working with datasets from **Shotgun Sequencing of Tara Oceans DNA samples corresponding to size fractions for prokaryotes** 
 
 Go to the [NCBI](https://www.ncbi.nlm.nih.gov) Biopoject PRJEB1787.
 
@@ -28,12 +28,12 @@ Go to the [NCBI](https://www.ncbi.nlm.nih.gov) Biopoject PRJEB1787.
 
 Inspect the quality files of all sequences. 
 
-- Use `trimgalore` to trim the sequences use any parameters you want. Inspect the quality of trimmed sequences. If you are satisfied with the quality of the trimmed sequences, report the code below. Which parameters you used and why?
+- Make a sbatch script to trim the sequences of each dataset using `trimgalore` and any parameters you want. Inspect the quality of trimmed sequences. Change the parameters if you are not satisfied with the quality of the trimmed sequences.  Which parameters (final choice if you tried a few) you used and why? Add the sbatch scripts you submitted on your repo.
 
 - Write a small loop to count the number of sequences in the both _1 and _2 files for trimmed datasets and provide the code below. Output the results of the loop in a file called `trimmedseqs_counts` and add it to your tables folder.
 
 ## Assembly
 
-- Use `megahit` to assemble each dataset into contigs. Provide the code below.
+- Use `megahit` to assemble each dataset into contigs. Use sbatch scripts. Work with one of the datasets first. Check the memomy used and the time it took to successful run this dataset. Optimize the usage to memory and time for the subsequent runs. Add the sbatch scripts you submitted on your repo.
 
 - Use `quast` to calculate basic summary statistics. Give the definition of N50 and L50 and briefly discuss the statistics. Which of datasets gave the largest total assembly? Which one produced the longest contig?
