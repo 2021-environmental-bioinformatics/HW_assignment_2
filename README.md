@@ -24,7 +24,7 @@ Go to the [NCBI](https://www.ncbi.nlm.nih.gov) Biopoject PRJEB1787.
 
 - Write a small loop to count the number of sequences in the both _1_ and _2_ files for all datasets and provide the code below. Output the results of the loop in a file called `rawseqs_counts` and add it to your `tables` folder.
 
-## Checking the quality of the sequences and trim them
+## Check the quality of the sequences and trim them
 
 Inspect the quality files of all sequences. 
 
@@ -37,3 +37,4 @@ Inspect the quality files of all sequences.
 - Use `megahit` to assemble each dataset into contigs. Use sbatch scripts. Work with one of the datasets first. Check the memomy used and the time it took to successful run this dataset. Optimize the usage to memory and time for the subsequent runs. Add the sbatch scripts you submitted on your `scripts` repo folder.
 
 - Use `quast` to calculate basic summary statistics. Give the definition of N50 and L50 and briefly discuss the statistics. Add the `report.tsv` table in your `table` folder. *Hint: you might need to rename your files.* Which of datasets gave the largest total assembly? Which one produced the longest contig?
+
