@@ -3,6 +3,8 @@ For this assignment you will assemble metagenomes using [MEGAHIT](https://academ
 
 In class we will create a conda environment called `megahit`, install [megahit](https://github.com/voutcn/megahit) and check the help menu.
 
+In order to check the quality of the files, you are going to need [Quast](http://quast.sourceforge.net/). Create the environment, install and check the help menu.
+
 
 
 ## Locate and download the sequences
@@ -34,4 +36,4 @@ Inspect the quality files of all sequences.
 
 - Use `megahit` to assemble each dataset into contigs. Provide the code below.
 
-- Use `quast` to calculate basic summary statistics.
+- Use `quast` to calculate basic summary statistics. Give the definition of N50 and L50 and briefly discuss the statistics. Which of datasets gave the largest total assembly? Which one produced the longest contig?
