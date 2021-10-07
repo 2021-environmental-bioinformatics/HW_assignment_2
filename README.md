@@ -15,9 +15,6 @@ Go to the [NCBI](https://www.ncbi.nlm.nih.gov) Biopoject PRJEB1787.
 - Download the metadata table; make a folder called `tables` in your Github repo and add it there.
 
 - How many SRA experiments (Runs) it contains and how many BioSamples? Briefly explain the difference between them.
->
-
-
 
 - What is the total volume of data in Gbases and in Tbytes?
 
