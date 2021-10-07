@@ -12,37 +12,38 @@ For your assignement, you will be working with datasets from **Shotgun Sequencin
 
 Go to the [NCBI](https://www.ncbi.nlm.nih.gov) Biopoject PRJEB1787.
 
-- Download the metadata table; make a folder called `tables` in your Github repo and add it there.
+> Download the metadata table; make a folder called `tables` in your Github repo and add it there.
 
-- How many SRA experiments (Runs) it contains and how many BioSamples? Briefly explain the difference between them.
+> How many SRA experiments (Runs) it contains and how many BioSamples? Briefly explain the difference between them.
 
-- What is the total volume of data in Gbases and in Tbytes?
+> What is the total volume of data in Gbases and in Tbytes?
 
-- Write a small loop to download the datasets ERR598970, ERR598972, and ERR599021. Provide the code below.
+> Write a small loop to download the datasets ERR598970, ERR598972, and ERR599021. Provide the code below.
 
-- From which station and depths are these datasets coming from? What are the coordinates of this station?
+> From which station and depths are these datasets coming from? What are the coordinates of this station?
 
-- Write a small loop to count the number of sequences in the both _1 and _2 files for all datasets and provide the code below. Output the results of the loop in a file called `rawseqs_counts` and add it to your `tables` folder.
+> Write a small loop to count the number of sequences in the both _1 and _2 files for all datasets and provide the code below. Output the results of the loop in a file called `rawseqs_counts` and add it to your `tables` folder.
 
 ## Check the quality of the sequences and trim them
 
 Inspect the quality files of all sequences. 
 
-- Make a sbatch script to trim the sequences of each dataset using `trimgalore` and any parameters you want. Inspect the quality of trimmed sequences. Change the parameters if you are not satisfied with the quality of the trimmed sequences.  Which parameters (final choice if you tried a few) you used and why? Make a new folder in your repo called `scripts` and add the sbatch scripts you submitted on your repo.
+> Make a sbatch script to trim the sequences of each dataset using `trimgalore` and any parameters you want. Inspect the quality of trimmed sequences. Change the parameters if you are not satisfied with the quality of the trimmed sequences.  Which parameters (final choice if you tried a few) you used and why? Make a new folder in your repo called `scripts` and add the sbatch scripts you submitted on your repo.
 
-- Write a small loop to count the number of sequences in both _1 and _2 files for the trimmed datasets. Output the results of the loop in a file called `trimmedseqs_counts` and add it to your `tables` folder.
+> Write a small loop to count the number of sequences in both _1 and _2 files for the trimmed datasets. Output the results of the loop in a file called `trimmedseqs_counts` and add it to your `tables` folder.
 
 ## Assembly
 
-- Use `megahit` to assemble each dataset into contigs. Use sbatch scripts. Work with one of the datasets first. Check the memomy used and the time it took to successful run this dataset. Optimize the usage to memory and time for the subsequent runs. Add the sbatch scripts you submitted on your `scripts` repo folder.
+> Use `megahit` to assemble each dataset into contigs. Use sbatch scripts. Work with one of the datasets first. Check the memomy used and the time it took to successful run this dataset. Optimize the usage to memory and time for the subsequent runs. Add the sbatch scripts you submitted on your `scripts` repo folder.
 
-- Use `quast` to calculate basic summary statistics. Give the definition of N50 and L50 and briefly discuss the statistics. Add the `report.tsv` table in your `table` folder. *Hint: you might need to rename your files.* Which of datasets gave the largest total assembly? Which one produced the longest contig?
-
-
+> Use `quast` to calculate the basic summary statistics. Give the definition of N50 and L50 and briefly discuss the statistics. Concatenate all three `report.tsv` tables to a new table called `combined_report.tsv` (in the appropriate format: first column should contain the descriptor of the values followed by the columns of the reported numbers for each dataset; do not forget to remane the columns). You can use bash, python, R :) but report what you used and your code. Add the `combined_report.tsv` table in your `table` folder. Which of datasets gave the largest total assembly? Which one produced the longest contig?
 
 
 
-### For successful completion of your homework your Github repo you conttain:
+
+
+### For successful completion of your homework your Github repo should contain:
 - an upadated README file with answers to the questions
-- 
+- a directory called `tables` that contains: the SRA metadata file, the rawseqs_counts, trimmedseqs_counts, and combined_report.tsv
+- a direc
 
