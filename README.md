@@ -30,7 +30,7 @@ Inspect the quality files of all sequences.
 
 - Make a sbatch script to trim the sequences of each dataset using `trimgalore` and any parameters you want. Inspect the quality of trimmed sequences. Change the parameters if you are not satisfied with the quality of the trimmed sequences.  Which parameters (final choice if you tried a few) you used and why? Make a new folder in your repo called `scripts` and add the sbatch scripts you submitted on your repo.
 
-- Write a small loop to count the number of sequences in both _1_ and _2_ files for trimmed datasets and provide the code below. Output the results of the loop in a file called `trimmedseqs_counts` and add it to your `tables` folder.
+- Write a small loop to count the number of sequences in both _1_ and _2_ files for the trimmed datasets and provide the code below. Output the results of the loop in a file called `trimmedseqs_counts` and add it to your `tables` folder.
 
 ## Assembly
 
