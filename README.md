@@ -1,7 +1,8 @@
 # Metagenomic assemblies
 For this assignment you will assemble metagenomes using [MEGAHIT](https://academic.oup.com/bioinformatics/article/31/10/1674/177884), NGS de novo assembler for assembling large and complex metagenomics data in a time- and cost-efficient manner.
 
-In class we will create a conda environment called `megahit`, install [megahit](https://github.com/voutcn/megahit) and check the help menu.
+In class we created a conda environment called `megahit`, installed  [megahit](https://github.com/voutcn/megahit) and checked the help menu. We noticed that the kmer size needs to be an odd number. This is actually a requirement that all (kmer) assemblers have
+- Please briefly explain what issues an even number kmer would cause.
 
 In order to check the quality of the files, you are going to need [Quast](http://quast.sourceforge.net/). In class we will create the environment, install and check the help menu.
 
