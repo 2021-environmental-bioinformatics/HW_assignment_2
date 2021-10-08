@@ -43,7 +43,7 @@ Inspect the quality files of all sequences.
 
 ____________________________________________________________________________________________________________________________________________
 
-### For successful completion of your homework your Github repo should contain:
+### For successful completion of your homework, your Github repo should contain:
 - an upadated README file with answers to the questions
 - a directory called `tables` that contains: the SRA metadata file, the rawseqs_counts, trimmedseqs_counts, and combined_report.tsv
 - a directory called `scripts` that contains: the sbatch scripts you used for the trimming and assembly
